@@ -1,0 +1,36 @@
+
+
+
+* {
+	border: 1px solid red;
+}
+
+
+
+.card {
+	margin: 20px auto;
+}
+
+.card-img-top {
+	height: 200px;
+}
+
+.card-text {
+	font-weight: bold;
+	text-align: center;
+}
+ h2 {
+ 	font-weight: bold;
+ 	font-size: 35px;
+ 	text-align: center;
+ 	margin: 30px 0px 10px 0px;
+ }
+
+
+.d-block {
+	height: 350px;
+}
+
+.col-md-3 {
+	display: none;
+}

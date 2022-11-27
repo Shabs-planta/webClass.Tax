@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+header .logo {
+    display: flex;
+    width: 150px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.navbar a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.navbar button {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-style: hidden;
+    padding: 6px 25px;
+    border-radius: 3px;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .f-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    z-index: 1;
+    margin: 100px 0px;
+}
+
+.f-div .fs-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.fs-div h1 {
+    font-size: 40px;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.fs-div p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.fs-div .double-b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.double-b .b-one {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-style: hidden;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.double-b .b-one:hover {
+    background-color: white;
+    border: 1px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+
+.double-b .b-two:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.double-b .b-two {
+    border-style: hidden;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 400;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+}
+
+.f-div .f-img {
+    display: flex;
+    width: 45%;
+    position: absolute;
+    right: 20px;
+
+}
+
+main .b-f-img {
+    background-color: hsl(231, 69%, 60%);
+    height: 300px;
+    width: 45%;
+    border-radius: 200px;
+    position: absolute;
+    right: -150px;
+    bottom: 0;
+    z-index: 0;
+}
+
+.s-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.s-div span {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.s-div p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 48ch;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.s-div .sf-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sf-div .ss-div {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+.ss-div a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ss-div a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.sf-div .st-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    z-index: 1;
+}
+.st-div .s-img {
+    display: flex;
+    width: 52%;
+    margin-right: 50px;
+}
+
+.st-div .sft-div {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sft-div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sft-div article {
+    font-size: 16px;
+    font-weight: 200;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.sft-div button,
+.fth-div button {
+    border-style: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.sf-div .b-s-img {
+    background-color: hsl(231, 69%, 60%);
+    height: 300px;
+    width: 57%;
+    border-radius: 200px;
+    position: absolute;
+    left: -150px;
+    bottom: 0;
+    z-index: 0;
+}
+
+.t-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.t-div span {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.t-div .f-p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 50ch;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.t-div .tf-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 650px;
+    gap: 3%;
+}
+
+.t-div .ts-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 4px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.555);
+    overflow: hidden;
+}
+
+.ts-div .c-img,
+.tt-div .fx-img,
+.tft-div .o-img {
+    display: flex;
+    width: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ts-div h3,
+.tt-div h3,
+.tft-div h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.ts-div .s-p,
+.tt-div .s-p,
+.tft-div .s-p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.ts-div .li-img,
+.tt-div .li-img,
+.tft-div .li-img {
+    display: flex;
+    width: 100%;
+}
+
+.ts-div button,
+.tt-div button,
+.tft-div button {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    margin: 10px;
+    padding: 10px 18px;
+    border-style: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.ts-div button:hover,
+.tt-div button:hover,
+.tft-div button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+.t-div .tt-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 4px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.555);
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.t-div .tft-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 4px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.555);
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.fth-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.fth-div span {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.fth-div p {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fth-div .fthf-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    margin-bottom: 30px;
+}
+
+.fthf-div a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+.fthf-div a img {
+    display: flex;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .fi-div {
+    background-color: hsl(231, 69%, 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 550px;
+}
+
+.fi-div h5 {
+    font: 15px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.fi-div span {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fi-div form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.fi-div form #email {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 200;
+    border-style: none;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.fi-div form #button {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-style: hidden;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.fi-div form #button:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+footer .footbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 10%;
+    margin: 20px 0px;
+}
+
+.footbar .f-logo {
+    display: flex;
+    width: 150px;
+}
+
+.footbar .f-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.f-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.f-bar a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.footbar .media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    gap: 18px;
+}
+
+.media .m-div {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.media .m-div:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.attribution { 
+    background-color: hsl(228, 45%, 44%);
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.attribution a { 
+    color: black; 
+}

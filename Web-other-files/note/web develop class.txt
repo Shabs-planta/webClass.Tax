@@ -1,0 +1,775 @@
+web development class
+
+
+PROGRAMMING LANGUAGES
+- HTML
+- CSS
+- JavaScript
+
+
+1. HTML
+- <h1> to <h5> ends </h1> to </h5>
+- <p> ends </p> paragraph
+- <!--  leaving a comment box -->
+- introducing HTML5 <main>, <header>, <footer>, <nav>, <video>, <article>, <section>
+- adding image to my wep site....<img src="https://www.freecatphotoapp.com/your-image.jpg">
+- link to external page with anchor alement , <a href="https://www.freecodecamp.org">this links to freecodecamp.org</a>
+- Link to Internal Sections of a Page with Anchor ElementsPassed..anywhere <a href="#footer">Jump to Bottom</a> end <footer id="footer">Copyright Cat Photo App</footer>
+- to nest an Anchor Element within a ParagraphPassed...<P>whats is the<a href="https://www.freecodecamp.org" target="_blank">cat photo</a> doing here</p>
+- to create or Make Dead Links Using the Hash SymbolPassed, <a href="#">
+- Turn an Image into a LinkPassed,  <a href="#"> add the image </a>
+- Create a Bulleted Unordered ListPassed   <ul>
+                                             <li>milk</li>
+                                             <li>cheese</li>
+                                           </ul>
+
+- Create a ordered list  <ol>
+                           <li>Garfield</li>
+                           <li>Sylvester</li>
+                         </ol>
+- Create a Text FieldPassed,  <input type="text">
+- Add Placeholder Text to a Text Field, <input type="text" placeholder="cat photo URL">
+- Create a Form ElementPassed,  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+                                 <input type="text" placeholder="cat photo URL">
+                                </form>
+
+- Add a Submit Button to a FormPassed,   <button type="submit">submit</submit>
+- Use HTML5 to Require a Field,  <input type="text" required>
+- Create a Set of Radio Buttons,  <label><input type="radio"name="indoor-outdoor">Indoor</label>
+                                  <label><input type="radio"name="indoor-outdoor">outdoor</label>
+
+- Create a Set of Checkboxes,  <label for="loving"><input id="loving" type="checkbox" name="personality">Loving</label>
+                               <label for="careing"><input id="careing" type="checkbox" name="personality">Careing</label>
+                               <label for="showing"><input id="showing" type="checkbox" name="personality">Showing</label>
+
+- Use the value attribute with Radio Buttons and Checkboxes, <label for="indoor"><input id="indoor" value="indoor" type="radio"> name="indoor-outdoor"> Indoor</label>
+                                                        <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+                                                             <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+                                                             <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label>
+                                                <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+
+- Check Radio Buttons and Checkboxes by Default, <label for="indoor"><input id="indoor" type="radio" name="indoor" checked value="indoor"> Indoor</label>
+                                                 <label for="loving"><input id="loving" type="checkbox" name="loving" checked value="loving"> Loving</label>
+
+- Nest Many Elements within a Single div Element, <div> end </div> its more like the main element
+
+- Declare the Doctype of an HTML DocumentPassed, <!DOCTYPE html>
+                                                  <html>
+                                                    <h1>Hello Guys</h1>
+                                                  </html>
+- Define the Head and Body of an HTML Document,  Metadata elements, such as link, meta, title, and style, typically go inside the head element.
+                                                 The head element should only include the title, and the body element should only include the h1 and p.
+
+
+
+2. CSS
+
+- Change the Color of Text,  <h2 style="color: red;">catphotoapp</h2>
+- Use CSS Selectors to Style Elements,  <style>
+                                          h2 {color: blue;}
+                                        </style>
+- Use a CSS Class to Style an Element, <style>
+                                        .red-text {
+                                            color: red;
+                                                  }
+                                        </style>
+                                        <h2 class="red-text">CatPhotoApp</h2>
+- Style Multiple Elements with a CSS Class, <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+- Change the Font Size of an Element, <style>
+                                        p {font-size: 16px;}
+                                       </style>
+- Set the Font Family of an Element, <style>
+                                       p{font-family: monospace;}
+                                     </style>
+- Import a Google Font, <link href=https://fonts.googleapis.com/css?family=lobster" ref="stylesheet" type="text/css">
+                        <style>
+                           h2 {font-family: lobster;}
+                         </style>
+- Specify How Fonts Should Degrade, <!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">-->
+                                    <style>
+                                       h2 {font-family: lobster, monospace;}
+                                    </style>    
+- Size Your Images, <style>
+                       .smaller-image  {width: 100px;}
+                     </style>
+                    them go inside the image and add the class like this, img class="smaller-image"
+
+- Add Borders Around Your Elements,  <style>
+                                        .thick-green-border{border-color: green; border-width: 10px; border-style: solid;}
+                                       </style>
+                                      them go inside the image and add the class like this, img class="smaller-image thick-green-border"
+- Add Rounded Corners with border-radius, add the border-radio to the border created like this, border-radius: 10px;
+
+- Make Circular Images with a border-radius, it when you use a percentage to mencur the size inside the border element like this, border-radius: 50%
+
+- Give a Background Color to a div Element, <style>
+                                              .silver-background {background-color: silver;}
+                                             </style>
+                                            after styling the background then create the link to the div element like the, <div class="silver-background">
+- Set the id of an Element, <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>      the id element was added to this from element.
+
+- Use an id Attribute to Style an Element, <style>
+                                               #cat-photo-form {background-color: green;}
+                                             </style>
+                                           create a link inside the from element like this, <form id="cat-photo-element">
+- Adjust the Padding of an Element, padding: 20px;
+
+- Adjust the marging of an Element, marging: 20px;
+
+- Add a Negative Margin to an Element, margin: -15px;
+
+- Add Different Padding to Each Side of an Element, padding-top: 40px;
+                                                    padding-right: 20px;
+                                                    padding-bottom: 20px;
+                                                    padding-left: 40px;
+
+- Add Different Margins to Each Side of an Element, margin-top: 40px;
+                                                    margin-right: 20px;
+                                                    margin-bottom: 20px;
+                                                    margin-left: 40px;
+- Use Clockwise Notation to Specify the Padding of an Element, padding: 40px 20px 20px 40px;
+
+- Use Clockwise Notation to Specify the Margin of an Element, margin: 40px 20px 20px 40px;
+
+- Use Attribute Selectors to Style Elements, [type='checkbox'] 
+                                               {
+                                               margin-top: 10px;
+                                               margin-bottom: 15px
+                                               }
+- Understand Absolute versus Relative Units, padding: 1.5em;
+- Style the HTML Body Element, <style>
+                                body {
+                                   background-color: black;
+                                      }
+                                </style>
+- Inherit Styles from the Body Element, <style>
+                                           {  
+                                        color: green;
+                                        font-family: monospace;
+                                           }
+                                        </style>
+
+                                        <h1>Hello World</h1>
+
+- Prioritize One Style Over Another, <style>
+                                      .pink-text {color: pink;}
+                                     </style>
+                                     <h1 class="pink-text">Hello World!</h1>
+
+- Override Styles in Subsequent CSS, <style>
+                                       .pink-text
+                                           {color: pink;}
+                                       .blue-text {color: blue;}
+                                     </style>
+                                     <h1 class="pink-text blue-text">Hello World!</h1>
+- Override Class Declarations by Styling ID Attributes, <style>
+                                                            .pink-text {
+                                                                        color: pink;
+                                                                       }
+                                                            .blue-text {color: blue;}
+                                                            #orange-text {color: orange;}
+                                                            </style>
+                                                            <h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+- Override Class Declarations with Inline Styles, <h1 style="color: white" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+
+- Override All Other Styles by using Important, <style>
+                                                 .pink-text {color: pink !important;}
+                                                </style>
+- Use Hex Code for Specific Colors, <style>
+                                      body {background-color: #000000;}
+                                    </style>
+- Use Hex Code to Mix Colors, <style>
+                                .red-text {color: #FF0000;}
+                                .green-text {color: #00FF00;}
+                                .dodger-blue-text {color: #1E90FF;}
+                                .orange-text {color: #FFA500;}
+                               </style>
+- Use Abbreviated Hex Code, <style>
+                               .red-text {color: #F00;}
+                               .fuchsia-text {color: #F0F;}
+                               .cyan-text {color: #0FF;}
+                               .green-text {color: #0F0;}
+                            </style>
+- Use RGB values to Color Elements, <style>
+                                     body {background-color: rgb(0, 0, 0);}
+                                    </style>
+- Use RGB to Mix ColorsPassed, <style>
+                                .red-text {color: rgb(255, 0, 0);}
+                                .orchid-text {color: rgb(218, 112, 214);}
+                                .sienna-text {color: rgb(160, 82, 45);}
+                                .blue-text {color: rgb(0, 0, 255);}
+                               </style>
+- Use CSS Variables to change several elements at once,  --penguin-skin: gray;
+                                                         --penguin-belly: white;
+                                                         --penguin-beak: orange;
+- Create a custom CSS Variable, --penguin-skin: gray;
+
+- Use a custom CSS Variable, we added to the background property this   background: var(--penguin-skin);
+
+- Attach a Fallback value to a CSS Variable,  we added to the background property this   background: var(--penguin-skin, black);
+
+- Improve Compatibility with Browser Fallbacks, .red-box {background: red; background: var(--red-color); height: 200px; width:200px;}
+
+- Inherit CSS Variables,   :root {--penguin-belly: pink;}
+
+- Change a variable for a specific area, .penguin 
+                                            {--penguin-belly: white;
+                                               position: relative;
+                                               margin: auto;
+                                               display: block;
+                                               margin-top: 5%;
+                                               width: 300px;
+                                               height: 300px;
+                                             }
+- Use a media query to change a variable,  @media (max-width: 350px) {:root {--penguin-size: 200px; --penguin-skin: black;}
+
+
+
+APPLIED VISUAL DESIGN
+
+- Create Visual Balance Using the text-align Property, <h4 style="text-align: center;">Google</h4>
+      <p style="text-align: justify;">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+
+- Adjust the Width of an Element Using the width Property, .fullCard {
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    width: 245px
+  } the width element was used inside the "fullcard"
+
+- Adjust the Height of an Element Using the height Property, <style>
+h4 {
+    text-align: center;
+    height: 25px;} 
+   </style> i have styled the h4 element.
+- Use the strong Tag to Make Text Bold, <strong>Stanford University</strong>
+
+- Use the u Tag to Underline Text, <u>Ph.D. students</u>
+
+- Use the em Tag to Italicize Text, <em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em>
+
+- Use the s Tag to Strikethrough Text, <h4><s>Google</s>Alphabet</h4>
+
+- Create a Horizontal Line Using the hr Element, <hr>
+
+- Adjust the background-color Property of Text, background-color: rgba(45, 45, 45, 0.1)
+
+- Adjust the Size of a Header Versus a Paragraph Tag, h4 {text-align: center;
+    font-size: 27px;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;}   its the incrize of font-size
+- Add a box-shadow to a Card-like Element, 
+         The box-shadow property takes values for
+
+*offset-x (how far to push the shadow horizontally from the element),
+*offset-y (how far to push the shadow vertically from the element),
+*blur-radius,
+*spread-radius and
+*color, in that order.       The blur-radius and spread-radius values are optional. #thumbnail{box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+- Decrease the Opacity of an Element, opacity: 0.7;
+
+- Use the text-transform Property to Make Text Uppercase,
+    Value	Result
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial	Use the default value
+inherit	Use the text-transform value from the parent element
+none	Default: Use the original text...             text-transform: uppercase;
+
+- Set the font-size for Multiple Heading Elements, 
+<style>
+h1{font-size: 68px;}
+h2{font-size: 52px;}
+h3{font-size: 40px;}
+h4{font-size: 32px;}
+h5{font-size: 21px;}
+h6{font-size: 14px;}
+</style>
+
+- Set the font-weight for Multiple Heading Elements, 
+<style>
+h1{font-weight: 800;}
+h2{font-weight: 600;}
+h3{font-weight: 500;}
+h4{font-weight: 400;}
+h5{font-weight: 300;}
+h6{font-weight: 200;}
+</style>
+
+- Set the font-size of Paragraph Text,  p {font-size: 16px;}
+
+- Set the line-height of Paragraphs, p {line-height: 25px;}
+
+- Adjust the Hover State of an Anchor Tag,
+ <style>
+  a {color: black;}
+  a:hover{color: blue;}
+</style>
+
+- Change an Element's Relative Position, position: relative; top: 15px; (Types of positions -: absolute | relative | fixed | sticky)
+
+- Move a Relatively Positioned Element with CSS Offsets,  As you saw in the last challenge, using the top offset moved the h2 downwards. 
+                                                          Likewise, using a left offset moves an item to the right.
+                                                          -  left: 15px; bottom: 10px;
+- Lock an Element to its Parent with Absolute Positioning,  
+#searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+      }
+- Lock an Element to the Browser Window with Fixed Positioning, 
+#navbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+         }
+- Push Elements Left or Right with the float Property, The next positioning tool does not actually use position, but sets the float property of an element.
+#left {
+
+      width: 50%;
+      float: left;
+    }
+#right {
+
+      width: 40%;
+      float: right;
+    }
+- Change the Position of Overlapping Elements with the z-index Property,  z-index: 2;
+
+- Center an Element Horizontally Using the margin Property, margin: auto;
+
+- Learn about Complementary Colors, 
+(red (#FF0000) and cyan (#00FFFF)
+green (#00FF00) and magenta (#FF00FF)
+blue (#0000FF) and yellow (#FFFF00))
+      
+- Learn about Tertiary Colors, 
+Color	Hex Code
+orange	#FF7F00
+cyan	#00FFFF
+raspberry	#FF007F
+
+- Adjust the Color of Various Elements to Complementary Colors,  teal (#09A7A1)  orange (#FF790E)
+
+- Adjust the Hue of a Color, Colors have several characteristics including hue, saturation, and lightness.
+Color	HSL
+red	hsl(0, 100%, 50%)
+yellow	hsl(60, 100%, 50%)
+green	hsl(120, 100%, 50%)
+cyan	hsl(180, 100%, 50%)
+blue	hsl(240, 100%, 50%)
+magenta	hsl(300, 100%, 50%)
+
+- Adjust the Tone of a Color, background-color: hsl(180, 80%, 25%);
+
+- Create a Gradual CSS Linear Gradient, background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+
+- Use a CSS Linear Gradient to Create a Striped Element, 
+background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+- Create Texture by Adding a Subtle Pattern as a Background Image,  body {background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);}
+
+- Use the CSS Transform scale Property to Change the Size of an Element, transform: scale(1.5); (transform properties:-scale, move, rotate, skew,)
+
+- Use the CSS Transform scale Property to Scale an Element on Hover, div:hover {transform: scale(1.1);}
+
+- Use the CSS Transform Property skewX to Skew an Element Along the X-Axis, transform: skewX(24deg);
+
+- Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis, transform: skewY(-10deg);
+
+- Create a Graphic Using CSS,  the "box-shadow" property takes values for (offset-x, offset-y, blur-radius, spread-radius and a color) value in that order.
+                               The blur-radius and spread-radius values are optional. " box-shadow: 25px 10px 0px 0px blue; "
+- Create a More Complex Shape Using CSS and HTML,  ::before and ::after is an pseudo-elements. , property to an empty string is ""
+
+- Learn How the CSS @keyframes and animation Properties Work,  
+      the two most important ones first:
+animation-name:- sets the name of the animation, which is later used by @keyframes to tell CSS which rules go with which animations.
+animation-duration:- sets the length of time for the animation.
+                    
+  #rect {
+    animation-name: rainbow;
+  animation-duration: 4s;
+}
+
+@keyframes rainbow {
+  0% {background-color: blue;}
+  50% {background-color: green;}
+  100% {background-color: yellow;}
+  }
+
+- Use CSS Animation to Change the Hover State of a Button,  
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
+@keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+}
+
+- Modify Fill Mode of an Animation, animation-fill-mode: forwards;
+
+- Create Movement Using CSS Animation, 
+ @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top, left: 0px;}
+    50% {
+      background-color: green;
+      top, left: 25px;}
+    100% {
+      background-color: yellow;
+      top, left: -25px;}
+
+- Create Visual Direction by Fading an Element from Left to Right,  opacity: 0.1;
+
+- Animate Elements Continually Using an Infinite Animation Count, animation-iteration-count: 3;
+
+- Make a CSS Heartbeat using an Infinite Animation Count, animation-iteration-count: infinite;
+
+- Animate Elements at Variable Rates,  @keyframes rule are the percentage after the first open braket.
+
+- Animate Multiple Elements at Variable Rates, To make them twinkle at different rates, 
+                                               you can set the animation-duration property to different values for each element.
+                                               like this:- animation-duration: 1.1s;
+
+- Change Animation Timing with Keywords, animation-timing-function: ease-out;
+                                         (NOTICE:  Other options include "ease-out", which is quick in the beginning then slows down,
+                                                   "ease-in", which is slow in the beginning, then speeds up at the end.
+                                                    or "linear", which applies a constant animation speed throughout.)
+
+- Learn How Bezier Curves Work,  animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+
+- Use a Bezier Curve to Move a Graphic, animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+- Make Motion More Natural Using a Bezier Curve,  animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+
+
+
+
+Applied Accessibility
+
+- Add a Text Alternative to Images for Visually Impaired Accessibility, <img src="doingKarateWow.jpeg" alt="Camper Cat is doing karate.">
+
+- Know When Alt Text Should be Left Blank, <img src="samuraiSwords.jpeg" alt="">
+
+- Use Headings to Show Hierarchical Relationships of Content, Headings (h1 through h6 elements)
+                                                              are workhorse tags that help provide structure and labeling to your content.
+
+- Jump Straight to the Content Using the main Element, <main></main>
+
+- Wrap Content in the article Element, <div> - groups content <section> - groups related content <article> - groups independent, self-contained content
+                                       <article></article>
+
+- Make Screen Reader Navigation Easier with the header Landmark, <header></header>
+
+- Make Screen Reader Navigation Easier with the nav Landmark, <nav></nav>
+
+- Make Screen Reader Navigation Easier with the footer Landmark , <footer></footer>
+
+- Improve Accessibility of Audio Content with the audio Element, <audio id="p" controls>
+      <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+      </audio>
+
+- Improve Chart Accessibility with the figure Element, <figure>
+        <!-- Stacked bar chart will go here -->
+        <br>
+        <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+      </figure>
+- Improve Form Field Accessibility with the label Element, 
+<form>
+  <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+<form>
+
+- Wrap Radio Buttons in a fieldset Element for Better Accessibility, 
+<form>
+  <fieldset>
+        <legend>What level ninja are you?</legend>
+        <input id="newbie" type="radio" name="levels" value="newbie">
+        <label for="newbie">Newbie Kitten</label><br>
+        <input id="intermediate" type="radio" name="levels" value="intermediate">
+        <label for="intermediate">Developing Student</label><br>
+        <input id="master" type="radio" name="levels" value="master">
+        <label for="master">Master</label>
+      </fieldset>
+</form>
+
+- Add an Accessible Date Picker, <label for="pickdate">Preferred Date:</label> 
+                                  <input type="date" id="pickdate" name="date">
+
+- Standardize Times with the HTML5 datetime Attribute, <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>
+
+- Make Elements Only Visible to a Screen Reader by Using Custom CSS, 
+display: none; or visibility: hidden; 
+hides content for everyone, including screen reader users
+Zero values for pixel sizes, such as width: 0px; height: 0px; 
+removes that element from the flow of your document, meaning screen readers will ignore it
+   <style>
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+  </style>
+
+- Improve Readability with High Contrast Text,  gray (#D3D3D3) darker gray (#636363)
+
+- Avoid Colorblindness Issues by Using Sufficient Contrast,CSS hsl(here) property (which stands for hue, saturation, lightness)
+
+- Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information, 
+    color: #003366;
+    background-color: #FFFF33;
+
+- Give Links Meaning by Using Descriptive Link Text, 
+<p>Felines the world over have been waging war on the most persistent of foes. 
+This red nemesis combines both cunning stealth and lightning speed. 
+But chin up, fellow fighters, our time for victory may soon be near. 
+Click here for <a href="">information about batteries</a></p>
+
+- Make Links Navigable with HTML Access Keys,  <h2><a accesskey="c" id="second" href="#">Is Chuck Norris a Cat Person?</a></h2>
+              the accesskey can work on <ancour, button and form element>
+
+- Use tabindex to Add Keyboard Focus to an Element,  <p tabindex="0">Instructions: Fill in ALL your information then click <b>Submit</b></p>
+              Certain elements, such as links and form controls, and also such as div, span, and p, by placing a tabindex="0" attribute on them.
+
+- Use tabindex to Specify the Order of Keyboard Focus for Several Elements, 
+    <input tabindex="1" type="search" name="search" id="search">
+    0<input tabindex="2" type="submit" name="submit" value="Submit" id="submit">
+
+
+
+Responsive Web Design Principles
+
+- Create a Media Query,
+  @media (max-height: 800px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+- Make an Image Responsive, 
+ .responsive-img {
+   max-width: 100%;
+   height: auto;
+}
+
+- Use a Retina Image for Higher Resolution Displays, 
+<style>
+  img { height: 100px; width: 100px; }
+
+</style>
+
+- Make Typography Responsive, 
+
+vw (viewport width): 10vw would be 10% of the viewport's width.
+vh (viewport height): 3vh would be 3% of the viewport's height.
+vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+<style>
+  h2 {width: 80vw;}
+  p {width: 75vmin;}
+
+</style>
+
+
+
+
+CSS Flexbox#
+
+- Use display: flex to Position Two Boxes, display: flex;
+
+- Add Flex Superpowers to the Tweet Embed, display: flex;
+
+- Use the flex-direction Property to Make a Row, its added under the display flex........flex-direction: row-reverse;
+
+- Apply the flex-direction Property to Create Rows in the Tweet Embed, flex-direction: row;
+
+- Use the flex-direction Property to Make a Column, flex-direction: Column;
+
+- Apply the flex-direction Property to Create a Column in the Tweet Embed, flex-direction: Column;
+
+- Align Elements Using the justify-content Property, 
+...flex-start: aligns items to the start of the flex container. For a row, this pushes the items to the left of the container. 
+For a column, this pushes the items to the top of the container. This is the default alignment if no justify-content is specified.
+...flex-end: aligns items to the end of the flex container. For a row, this pushes the items to the right of the container. 
+For a column, this pushes the items to the bottom of the container.
+...space-between: aligns items to the center of the main axis, with extra space placed between the items. 
+The first and last items are pushed to the very edge of the flex container. For example, in a row the first item is against the left side of the container, 
+the last item is against the right side of the container, then the remaining space is distributed evenly among the other items.
+...space-around: similar to space-between but the first and last items are not locked to the edges of the container, 
+the space is distributed around all the items with a half space on either end of the flex container.
+...space-evenly: Distributes space evenly between the flex items with a full space at either end of the flex container
+
+justify-content: center;
+
+- Use the justify-content Property in the Tweet Embed, justify-content: center;
+
+- Align Elements Using the align-items Property, 
+*flex-start: aligns items to the start of the flex container. For rows, this aligns items to the top of the container. 
+ For columns, this aligns items to the left of the container.
+*flex-end: aligns items to the end of the flex container. For rows, this aligns items to the bottom of the container.
+ For columns, this aligns items to the right of the container.
+*center: align items to the center. For rows, this vertically aligns items (equal space above and below the items).
+ For columns, this horizontally aligns them (equal space to the left and right of the items).
+*stretch: stretch the items to fill the flex container. For example, rows items are stretched to fill the flex container top-to-bottom.
+ This is the default value if no align-items value is specified.
+*baseline: align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit on.
+
+align-items: center;
+
+- Use the align-items Property in the Tweet Embed, align-items: center;
+
+- Use the flex-wrap Property to Wrap a Row or Column, 
+*nowrap: this is the default setting, and does not wrap items.
+*wrap: wraps items onto multiple lines from top-to-bottom if they are in rows and left-to-right if they are in columns.
+*wrap-reverse: wraps items onto multiple lines from bottom-to-top if they are in rows and right-to-left if they are in columns.
+
+flex-wrap: wrap;
+
+- Use the flex-shrink Property to Shrink Items, flex-shrink: 1; flex-shrink: 2;
+
+- Use the flex-grow Property to Expand Items, flex-grow: 1; flex-grow: 2;
+
+- Use the flex-basis Property to Set the Initial Size of an Item, flex-basis: 10em;  flex-basis: 20em; 
+
+- Use the flex Shorthand Property, flex: 1 1 150px; flex: 2 2 150px;
+
+- Use the order Property to Rearrange Items, order: 1; order: 2;
+
+- Use the align-self Property, align-self: center; align-self: flex-end;
+align-self accepts the same values as align-items and will override any value set by the align-items property.
+
+
+
+CSS Grid#
+
+- Create Your First CSS Grid, display: grid;
+
+- Add Columns with grid-template-columns, grid-template-columns: 100px 100px 100px;
+
+- Add Rows with grid-template-rows, grid-template-rows: 50px 50px;
+
+- Use CSS Grid units to Change the Size of Columns and Rows,  grid-template-columns: 1fr 100px 2fr; grid-template-rows: 50px 50px;
+fr: sets the column or row to a fraction of the available space,
+
+auto: sets the column or row to the width or height of its content automatically,
+
+%: adjusts the column or row to the percent width of its container.
+
+- Create a Column Gap Using grid-column-gap, grid-column-gap: 20px;
+
+- Create a Row Gap using grid-row-gap, grid-row-gap: 5px;
+
+- Add Gaps Faster with grid-gap, for personal property "grid-row-gap and grid-column-gap" grid-gap: 10px 20px; 
+
+- Use grid-column to Control Spacing, grid-column: 2 / 4;
+
+- Use grid-row to Control Spacing, grid-row: 2 / 4;
+
+- Align an Item Horizontally using justify-self, justify-self: center;
+start: aligns the content at the left of the cell,
+
+center: aligns the content in the center of the cell,
+
+end: aligns the content at the right of the cell.
+
+- Align an Item Vertically using align-self, align-self: end;
+
+- Align All Items Horizontally using justify-itemsPassed, justify-items: center;
+
+- Align All Items Vertically using align-items, align-items: end;
+
+- Divide the Grid Into an Area Template, 
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "advert footer footer";
+
+- Place Items in Grid Areas Using the grid-area Property, grid-area: footer;
+
+- Use grid-area Without Creating an Areas Template, grid-area: 3/1/4/4;
+
+- Reduce Repetition Using the repeat Function, grid-template-columns: repeat(3,  1fr); means grid-template-columns: 1fr 1fr 1fr;
+
+- Limit Item Size Using the minmax Function,  grid-template-columns: repeat(3, minmax(90px, 1fr));
+
+- Create Flexible Layouts Using auto-fill, grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+
+- Create Flexible Layouts Using auto-fit,  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+- Use Media Queries to Create Responsive Layouts, 
+ grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer";
+
+- Create Grids within Grids,     display: grid;  grid-template-columns: auto 1fr;
+
+
+
+
+<strong> Build a Tribute Page </strong>
+
+
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
+
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you 
+should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies 
+(just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. 
+Other projects will give you a chance to work with different technology stacks like React. 
+We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page 
+(e.g. "Dr. Norman Borlaug").
+
+User Story #3: I should see a div element with a corresponding id="img-div".
+
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing
+the image shown in img-div.
+
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional
+ information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your 
+link to open in a new tab (i.e. target="_blank").
+
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element.
+
+You can build your project by using this CodePen template and clicking Save to create your own pen. Or you can use this CDN link to run the tests in 
+any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.
+
+Once you're done, submit the URL to your working project with all its tests passing.
+
+
+1st completed site https://codepen.io/shabs-planta/pen/xxrNWoY?editors=1100

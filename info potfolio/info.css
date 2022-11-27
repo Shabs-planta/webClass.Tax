@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: ; */
+    font-family: 'Raleway', sans-serif;
+    max-width: 500px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+#backgroundInfo {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    border: 1px solid #5c5c5c;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 30px 50px;
+}
+
+#logo {
+    width: 150px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0px 5px 0px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+.names {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#Fname,
+#Lname,
+#Pword,
+#Pword1 {
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    border: 1px solid #c7c1c1;
+    border-radius: 7px;
+}
+
+#Uname {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border: 1px solid #c7c1c1;
+    border-radius: 7px;
+}
+
+article {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.passwords {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#box {
+    height: 17px;
+    width: 17px;
+}
+
+label {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#Atag {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5%;
+}
+
+#Atag:hover {
+    background-color: rgba(55, 55, 252, 0.103);
+    color: blue;
+    padding: 5px 10px;
+    margin-left: -10px;
+
+}
+
+#button {
+    padding: 12px 30px;
+    border-style: hidden;
+    background-color: rgb(42, 42, 219);
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#button:hover {
+    background-color: rgb(9, 9, 177);
+}
+
+footer {
+    display: none;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+

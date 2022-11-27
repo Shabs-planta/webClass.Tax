@@ -1,0 +1,22 @@
+
+
+
+* {
+	/*border: 1px solid red;*/
+}
+
+
+
+
+[class="col"],
+.container,
+.container-xl, 
+.col-md-auto, 
+.col-sm-12,
+.col-md-6, 
+.col-sm-3 {
+	padding: 1rem;
+	background-color: #33b5e5;
+	border: 2px solid #fff;
+	/*color: #fff;*/
+}

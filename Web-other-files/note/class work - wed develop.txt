@@ -1,0 +1,36 @@
+1. padding - is the distance between an element and the surrounding
+       types of padding
+- padding top
+- padding buttom
+- padding left
+- padding right
+
+padding: 2px; (top, bottom, left and right)
+padding: 2px 5px; (top&bottom and left&right)
+
+padding: 2px 3px 5px 1px; (top, right, bottom, left)
+
+padding-top: 2px;
+padding-bottom: 5px;
+padding-left: 3px;
+padding-right: 1px;
+
+
+2. marging - is the distance between two elements 
+       types of marging
+- marging top
+- marging buttom
+- marging left
+- marging right
+
+marging: 2px; (top, bottom, left and right)
+marging: 2px 5px; (top&bottom and left&right)
+
+marging: 2px 3px 5px 1px; (top, right, bottom, left)
+
+marging-top: 2px;
+marging-buttom: 5px;
+marging-left: 3px;
+marging-right: 1px;
+
+3. style

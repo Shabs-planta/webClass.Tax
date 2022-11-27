@@ -1,0 +1,43 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+#disappear {
+    background-color: 000000;
+    color: white;
+    padding: 15px 50px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#disappear:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    /* border: 1px solid blue; */
+}
+
+#GreenCircle {
+    background-color: green;
+}
+
+#YellowCircle {
+    background-color: yellow;
+}

@@ -1,0 +1,11 @@
+
+
+To Instore <i> element "fontawesome"       <head>
+                                              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+                                           </head>
+
+To edit and innal text         display: block;
+                               text-align: left;
+                               white-space: pre-line;
+
+to add stroll up&down       overflow: scroll;
